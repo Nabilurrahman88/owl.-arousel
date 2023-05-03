@@ -1,0 +1,27 @@
+.owl-carousel img {
+    height: 400px;
+}
+
+.slider-switcher a svg {
+    color: white;
+    background-color: rgba(0, 0, 0, .5);
+    width: 50px;
+}
+
+.naika-sllider {
+    position: relative;
+}
+
+.slider-switcher a.next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 999;
+}
+
+.slider-switcher a.prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 999;
+}

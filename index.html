@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- owl carousel style  -->
+    <link rel="stylesheet" href="asset/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="asset/css/owl.theme.default.min.css">
+    <!-- main style sheet  -->
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<body>
+
+    <div class="naika-sllider">
+        <div class="owl-carousel">
+            <div> <img src="img/1.jpg" alt=""> </div>
+            <div> <img src="img/2.jpg" alt=""> </div>
+            <div> <img src="img/3.jpg" alt=""> </div>
+            <div> <img src="img/4.jpg" alt=""> </div>
+            <div> <img src="img/5.jpg" alt=""> </div>
+            <div> <img src="img/6.jpg" alt=""> </div>
+            <div> <img src="img/7.jpg" alt=""> </div>
+            <div> <img src="img/8.jpg" alt=""> </div>
+        </div>
+        <div class="slider-switcher">
+            <a class="prev" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+            </a>
+
+            <a class="next" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+            </a>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="asset/js/jquery-3.6.3.min.js"></script>
+    <script src="asset/js/owl.carousel.min.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            const nabil = jQuery(".owl-carousel")
+            nabil.owlCarousel({
+                items: 4,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 3000,
+            });
+            jQuery('.next').click(function () {
+                nabil.trigger('next.owl.carousel')
+            });
+            jQuery('.prev').click(function () {
+                nabil.trigger('prev.owl.carousel')
+            });
+        });
+    </script>
+</body>
+
+</html>
